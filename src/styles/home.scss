@@ -1,0 +1,41 @@
+@import "./colors.scss";
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.links {
+  li {
+    display: inline-block;
+    &:not(first-child) {
+      margin-right: 12px;
+    }
+    a {
+      text-decoration: none;
+      color: $mid-grey;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      font-weight: 500;
+      &:hover,
+      &.active {
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}
+.error,
+.server-error {
+  display: block;
+  margin-top: 4px;
+  color: $error;
+  font-size: 14px;
+  font-weight: 500;
+}
+.error {
+  display: none;
+}
+.server-error {
+  text-align: center;
+}

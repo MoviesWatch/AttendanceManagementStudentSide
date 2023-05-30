@@ -1,0 +1,29 @@
+.profile-page-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 16px 64px;
+    label {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      justify-self: center;
+    }
+  }
+  .server-error {
+    font-size: 16px;
+    margin-top: 32px;
+  }
+  .server-result {
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 32px;
+    color: green;
+  }
+}
